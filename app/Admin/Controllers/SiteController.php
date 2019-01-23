@@ -123,11 +123,21 @@ class SiteController extends Controller
     {
         $form = new Form(new Site);
 
-        $form->select('category_id', '分类')->options(Category::selectOptions());
-        $form->text('title', '标题')->attribute('autocomplete', 'off');
-        $form->image('thumb', '图标')->uniqueName();
-        $form->text('describe', '描述')->attribute('autocomplete', 'off');
-        $form->url('url', '地址')->attribute('autocomplete', 'off');
+        $form->select('category_id', '分类')
+            ->options(Category::selectOptions())
+            ->rules('required');
+        $form->text('title', '标题')
+            ->attribute('autocomplete', 'off')
+            ->rules('required|max:50');
+        $form->image('thumb', '图标')
+            ->uniqueName()
+            ->rules('required|max:200');
+        $form->text('describe', '描述')
+            ->attribute('autocomplete', 'off')
+            ->rules('required|max:300');
+        $form->url('url', '地址')
+            ->attribute('autocomplete', 'off')
+            ->rules('required|max:250');
 
         $form->footer(function ($footer) {        
             $footer->disableViewCheck();
