@@ -314,6 +314,9 @@ return [
     'extensions' => [
         'grid-lightbox' => [
             'enable' => true,
-        ]
+        ],
+        'login-captcha' => [
+            'enable' => true,
+        ],
     ],
 ];
