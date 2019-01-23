@@ -68,9 +68,15 @@ class CategoryController extends Controller
     {
         $form = new Form(new Category);
 
-        $form->select('parent_id', '父级')->options(Category::selectOptions());
-        $form->text('title', '标题')->placeholder('不得超过20个字符');
-        $form->icon('icon', '图标')->default('fa-star-o');
+        $form->select('parent_id', '父级')
+            ->options(Category::selectOptions())
+            ->rules('required');
+        $form->text('title', '标题')
+            ->rules('required|max:50')
+            ->placeholder('不得超过50个字符');
+        $form->icon('icon', '图标')
+            ->default('fa-star-o')
+            ->rules('required|max:20');
 
         $form->tools(function (Form\Tools $tools) {
             $tools->disableDelete();
