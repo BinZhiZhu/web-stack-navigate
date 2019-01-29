@@ -318,5 +318,8 @@ return [
         'login-captcha' => [
             'enable' => true,
         ],
+        'material-ui' => [
+            'enable' => true
+        ]
     ],
 ];
