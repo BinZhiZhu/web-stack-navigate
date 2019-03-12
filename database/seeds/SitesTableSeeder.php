@@ -22,11 +22,11 @@ class SitesTableSeeder extends Seeder
                 'id' => 1,
                 'category_id' => 1,
                 'title' => 'Dribbble',
-                'thumb' => 'images/247ba053249cc2c4ab0c071918f89397.png',
+                'thumb' => 'images/7db1257f40b9b04482744387a00b359d.png',
                 'describe' => '全球UI设计师作品分享平台。',
                 'url' => 'https://dribbble.com/',
                 'created_at' => '2019-01-21 15:23:29',
-                'updated_at' => '2019-01-21 15:23:29',
+                'updated_at' => '2019-03-12 02:13:08',
             ),
             1 => 
             array (
