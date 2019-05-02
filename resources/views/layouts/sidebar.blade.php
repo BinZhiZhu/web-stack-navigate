@@ -4,10 +4,10 @@
             <!-- logo -->
             <div class="logo">
                 <a href="/" class="logo-expanded">
-                    <img src="/vendor/web-stack/images/logo@2x.png" width="100%" alt="" />
+                    <img src="{{ asset('img/logo@2x.png') }}" width="100%" alt="" />
                 </a>
                 <a href="/" class="logo-collapsed">
-                    <img src="/vendor/web-stack/images/logo-collapsed@2x.png" width="40" alt="" />
+                    <img src="{{ asset('img/logo-collapsed@2x.png') }}" width="40" alt="" />
                 </a>
             </div>
             <div class="mobile-menu-toggle visible-xs">

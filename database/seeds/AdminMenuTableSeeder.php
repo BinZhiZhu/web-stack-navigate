@@ -35,11 +35,11 @@ class AdminMenuTableSeeder extends Seeder
                 'parent_id' => 0,
                 'order' => 4,
                 'title' => '后台管理',
-                'icon' => 'fa-tasks',
+                'icon' => 'fa-cogs',
                 'uri' => NULL,
                 'permission' => NULL,
                 'created_at' => NULL,
-                'updated_at' => '2019-01-21 14:39:48',
+                'updated_at' => '2019-05-02 12:08:17',
             ),
             2 => 
             array (
@@ -107,11 +107,11 @@ class AdminMenuTableSeeder extends Seeder
                 'parent_id' => 0,
                 'order' => 2,
                 'title' => '分类管理',
-                'icon' => 'fa-bars',
+                'icon' => 'fa-archive',
                 'uri' => 'categories',
                 'permission' => NULL,
                 'created_at' => '2019-01-21 12:07:46',
-                'updated_at' => '2019-01-21 14:39:48',
+                'updated_at' => '2019-05-02 12:06:59',
             ),
             8 => 
             array (
@@ -119,11 +119,11 @@ class AdminMenuTableSeeder extends Seeder
                 'parent_id' => 0,
                 'order' => 3,
                 'title' => '网站管理',
-                'icon' => 'fa-bars',
+                'icon' => 'fa-edge',
                 'uri' => 'sites',
                 'permission' => NULL,
                 'created_at' => '2019-01-21 14:39:27',
-                'updated_at' => '2019-01-21 14:39:48',
+                'updated_at' => '2019-05-02 12:07:54',
             ),
         ));
         
