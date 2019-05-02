@@ -8,8 +8,8 @@
         <div class="navbar-inner">
             <div class="navbar-brand">
                 <a href="/" class="logo">
-                    <img src="/vendor/web-stack/images/logo_dark@2x.png" width="100%" alt="" class="hidden-xs">
-                    <img src="/vendor/web-stack/images/logo@2x.png" width="100%" alt="" class="visible-xs">
+                    <img src="{{ asset('img/logo_dark@2x.png') }}" width="100%" alt="" class="hidden-xs">
+                    <img src="{{ asset('img/logo@2x.png') }}" width="100%" alt="" class="visible-xs">
                 </a>
             </div>
             <div class="navbar-mobile-clear"></div>
@@ -76,7 +76,7 @@
                 <div class="footer-inner">
                     <div class="footer-text">
                         &copy; 2019
-                        <a href="../cn/about.html"><strong>WebStack</strong></a> design by <a href="https://github.com/hui-ho" target="_blank"><strong>hui-ho</strong></a>
+                        <a href="/"><strong>WebStack</strong></a> design by <a href="https://github.com/hui-ho" target="_blank"><strong>hui-ho</strong></a>
                     </div>
                     <div class="go-up">
                         <a href="#" rel="go-top">
@@ -87,14 +87,5 @@
             </footer>
         </div>
     </div>
-    <!-- Bottom Scripts -->
-    <script src="/vendor/web-stack/js/bootstrap.min.js"></script>
-    <script src="/vendor/web-stack/js/TweenMax.min.js"></script>
-    <script src="/vendor/web-stack/js/resizeable.js"></script>
-    <script src="/vendor/web-stack/js/joinable.js"></script>
-    <script src="/vendor/web-stack/js/xenon-api.js"></script>
-    <script src="/vendor/web-stack/js/xenon-toggles.js"></script>
-    <!-- JavaScripts initializations and stuff -->
-    <script src="/vendor/web-stack/js/xenon-custom.js"></script>
 </body>
 </html>

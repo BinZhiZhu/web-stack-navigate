@@ -107,15 +107,6 @@
         pos = $(href).position().top - 30;
     });
     </script>
-    <!-- Bottom Scripts -->
-    <script src="/vendor/web-stack/js/bootstrap.min.js"></script>
-    <script src="/vendor/web-stack/js/TweenMax.min.js"></script>
-    <script src="/vendor/web-stack/js/resizeable.js"></script>
-    <script src="/vendor/web-stack/js/joinable.js"></script>
-    <script src="/vendor/web-stack/js/xenon-api.js"></script>
-    <script src="/vendor/web-stack/js/xenon-toggles.js"></script>
-    <!-- JavaScripts initializations and stuff -->
-    <script src="/vendor/web-stack/js/xenon-custom.js"></script>
 </body>
 
 </html>
