@@ -80,15 +80,23 @@ class SiteController extends Controller
         $grid = new Grid(new Site);
 
         $grid->id('ID');
-        $grid->column('category.title', '分类');
+        $grid->category()->title('分类');
         $grid->title('标题');
         $grid->thumb('图标')->gallery(['width' => 25, 'height' => 25]);
         $grid->describe('描述')->limit(40);
         $grid->url('地址');
 
-        $grid->disableFilter();
+        $grid->filter(function ($filter) {
+            $filter->disableIdFilter();
+
+            $categories = Category::query()->pluck('title', 'id');
+            $filter->equal('category_id', '分类')->select($categories);
+
+            $filter->like('title', '标题');
+        });
+
         $grid->disableExport();
-        
+
         return $grid;
     }
 
@@ -140,7 +148,7 @@ class SiteController extends Controller
             ->attribute('autocomplete', 'off')
             ->rules('required|max:250');
 
-        $form->footer(function ($footer) {        
+        $form->footer(function ($footer) {
             $footer->disableViewCheck();
             $footer->disableEditingCheck();
             $footer->disableCreatingCheck();
