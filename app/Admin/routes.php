@@ -13,4 +13,5 @@ Route::group([
     $router->get('/', 'HomeController@index');
     $router->resource('categories', CategoryController::class);
     $router->resource('sites', SiteController::class);
+    $router->resource('setting', SettingController::class);
 });
