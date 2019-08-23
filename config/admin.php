@@ -319,7 +319,6 @@ return [
             'enable' => true,
         ],
         'material-ui' => [
-//            'enable' => true
             'enable' => false
         ]
     ],
