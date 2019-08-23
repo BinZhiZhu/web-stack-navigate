@@ -4,10 +4,10 @@
             <!-- logo -->
             <div class="logo">
                 <a href="/" class="logo-expanded">
-                    <img src="{{ asset('img/logo@2x.png') }}" width="100%" alt="" />
+                    <img src="{{ asset('img/logo@2x.png') }}" width="100%" alt=""/>
                 </a>
                 <a href="/" class="logo-collapsed">
-                    <img src="{{ asset('img/logo-collapsed@2x.png') }}" width="40" alt="" />
+                    <img src="{{ asset('img/logo-collapsed@2x.png') }}" width="40" alt=""/>
                 </a>
             </div>
             <div class="mobile-menu-toggle visible-xs">
@@ -22,12 +22,12 @@
         <ul id="main-menu" class="main-menu">
             @foreach ($categories as $categorie)
                 <li>
-                    @if (count($categorie->children) == 0 && $categorie->parent_id == 0)
+                    @if ($categorie->children_count == 0 && $categorie->parent_id == 0)
                         <a href="#{{ $categorie->title }}" class="smooth">
                             <i class="fa fa-fw {{ $categorie->icon }}"></i>
                             <span class="title">{{ $categorie->title }}</span>
                         </a>
-                    @elseif (count($categorie->children) != 0 && $categorie->parent_id == 0)
+                    @elseif ($categorie->children_count != 0 && $categorie->parent_id == 0)
                         <a>
                             <i class="fa fa-fw {{ $categorie->icon }}"></i>
                             <span class="title">{{ $categorie->title }}</span>

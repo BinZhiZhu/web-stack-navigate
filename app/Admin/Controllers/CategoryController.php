@@ -23,6 +23,7 @@ class CategoryController extends Controller
         return Admin::content(function (Content $content) {
             $content->header('分类管理');
             $content->body(Category::tree(function ($tree) {
+                $tree->nestable(['maxDepth' => 2]);
                 $tree->branch(function ($branch) {
                     $icon = '<i class="fa fa-fw ' . $branch['icon'] . '"></i>';
                     return "$icon {$branch['title']} ";
@@ -83,7 +84,7 @@ class CategoryController extends Controller
             $tools->disableView();
         });
 
-        $form->footer(function ($footer) {        
+        $form->footer(function ($footer) {
             $footer->disableViewCheck();
             $footer->disableEditingCheck();
             $footer->disableCreatingCheck();

@@ -46,7 +46,7 @@ $ php artisan key:generate
 php artisan migrate:refresh --seed
 ```
 
-开启服务：
+本地测试：
 
 ```shell
 $ php artisan serve
@@ -54,6 +54,7 @@ $ php artisan serve
 
 安装完成：http://127.0.0.1:8000
 
+> 有些朋友对部署表示有压力，但这和一般的 Laravel 应用是没有区别的，线上环境可以参考：https://github.com/summerblue/laravel-ubuntu-init
 
 
 ## 使用
@@ -70,6 +71,14 @@ $ php artisan serve
 
 ![网站](public/screen/04.png)
 
+
+## 其他
+
+本应用预设了一些站点数据，可以使用以下命令清除：
+
+```shell
+$ php artisan webstack:clean
+```
 
 
 ## 感谢
