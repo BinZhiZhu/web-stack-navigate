@@ -71,20 +71,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Main Footer -->
-            <footer class="main-footer sticky footer-type-1 fixed">
-                <div class="footer-inner">
-                    <div class="footer-text">
-                        &copy; 2019
-                        <a href="/"><strong>WebStack</strong></a> design by <a href="https://github.com/hui-ho" target="_blank"><strong>hui-ho</strong></a>
-                    </div>
-                    <div class="go-up">
-                        <a href="#" rel="go-top">
-                            <i class="fa-angle-up"></i>
-                        </a>
-                    </div>
-                </div>
-            </footer>
+            @include('layouts.footer')
         </div>
     </div>
 </body>
