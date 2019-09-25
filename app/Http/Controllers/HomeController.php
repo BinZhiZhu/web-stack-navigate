@@ -9,10 +9,12 @@ class HomeController extends Controller
 {
     public function index()
     {
-
         $categories = Category::with(['children' => function ($query) {
             $query->orderBy('order');
-        }, 'sites'])->orderBy('order')->get();
+        }, 'sites'])
+            ->withCount('children')
+            ->orderBy('order')
+            ->get();
 
         return view('index')->with('categories', $categories);
     }
