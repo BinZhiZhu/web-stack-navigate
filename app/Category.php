@@ -10,11 +10,6 @@ class Category extends Model
 {
     use ModelTree, AdminBuilder;
 
-    public function setChildrenCountAttribute()
-    {
-        return count($this->children);
-    }
-
     public function children()
     {
         return $this->hasMany(static::class, 'parent_id');
