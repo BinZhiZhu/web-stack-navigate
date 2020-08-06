@@ -24,3 +24,4 @@
         </div>
     </div>
 </footer>
+<script src="https://cdn.staticfile.org/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>

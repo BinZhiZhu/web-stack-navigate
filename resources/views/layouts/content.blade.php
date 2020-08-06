@@ -15,7 +15,7 @@
                         <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('$site->url', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="$site->url">
                             <div class="xe-comment-entry">
                                 <a class="xe-user-img">
-                                    <img src="/uploads/$site->thumb" class="img-circle" width="40">
+                                    <img data-original="/uploads/$site->thumb" class="img-circle lazy" width="40">
                                 </a>
                                 <div class="xe-comment">
                                     <a href="#" class="xe-user-name overflowClip_1">
