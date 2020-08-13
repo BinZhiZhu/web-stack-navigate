@@ -32,13 +32,16 @@
     <!-- 锚点平滑移动 -->
     <script type="text/javascript">
     $(document).ready(function() {
+        /*lazyload*/
+        $(function() {
+            $("img.lazy").lazyload();
+        })
         $(document).on('click', '.has-sub', function(){
             var _this = $(this)
             if(!$(this).hasClass('expanded')) {
-               setTimeout(function(){
+                setTimeout(function(){
                     _this.find('ul').attr("style","")
-               }, 300);
-              
+                }, 300);
             } else {
                 $('.has-sub ul').each(function(id,ele){
                     var _that = $(this)
