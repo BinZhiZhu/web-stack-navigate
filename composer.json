@@ -6,7 +6,6 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "caouecs/laravel-lang": "~3.0",
         "encore/laravel-admin": "^1.6",
         "fideloper/proxy": "~3.3",
         "intervention/image": "^2.4",
